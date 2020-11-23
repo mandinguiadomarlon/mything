@@ -1,0 +1,525 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #F0F2F5;
+  list-style: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.overlay{
+  position:absolute;
+	display:none;
+  background-color: rgba(f, f, f, 0);
+  top: 0;
+	left: 0;
+  bottom: 0;
+  right: 0;
+}
+.overlayy{
+  position:absolute;
+	display:none;
+  background-color: rgba(f, f, f, 0);
+  top: 0;
+	left: 0;
+  bottom: 0;
+  right: 0;
+}
+.overlay-dark {
+  position:absolute;
+  display:none;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.overlay-darkk{
+  position:absolute;
+  display:none;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.active {
+  border-bottom: 2px solid #187bff;
+}
+.app_logo {
+  width: 60px;
+  padding: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.app_logo .logo{
+  height: 50px;
+  width: 60px;
+  padding: 5px;
+  padding-bottom: 8px;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+}
+.nav-main-container {
+  z-index: 1;
+}
+.nav-main-container .nav-container {
+  font-family: 'Montserrat', sans-serif;
+  background: #F0F2F5;
+  border-bottom: 1px solid #F0F2F5;
+  box-shadow: 0 8px 6px -6px #dddfe2;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+/*NAVIGATION MENU (HOME - PROFILE)*/
+.nav-main-container .nav-container .menu {
+  display: flex;
+  width: 600px;
+  position: relative;
+  margin: auto;
+}
+.nav-main-container .nav-container .menu li{
+  list-style: none;
+  flex: 1;
+  font-size: 25px;
+  cursor: pointer;
+  user-select: none;
+}
+.nav-main-container .nav-container .menu span{
+  color: rgba(0, 0, 0, 0.7);
+}
+.nav-main-container .nav-container .menu span:hover{
+  transform: scale(1.2);
+}
+/*NOTIFICATIONS MENU (NOTIF - PROFILE)*/
+.nav-main-container .user-notif{
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  align-items: center;
+  text-align: center;
+}
+.nav-main-container .user-notif .notif {
+  padding: 5px;
+  margin: 5px;
+}
+.nav-main-container .user-notif .notif a {
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.nav-main-container .user-notif .notif span {
+  color: rgba(0, 0, 0, 0.7);
+}
+.nav-main-container .user-notif .notif span:hover{
+  transform: scale(1.2);
+}
+.nav-main-container .user-notif .user-icon {
+  padding: 5px;
+  border: none;
+}
+.nav-main-container .user-notif .user-icon a {
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.nav-main-container .user-notif .user-icon span {
+  color: rgba(0, 0, 0, 0.7);
+}
+.nav-main-container .user-notif .user-icon span:hover{
+  transform: scale(1.2);
+}
+/*ACCOUNT ICON DROP-DOWN*/
+.nav-main-container .user-notif .user-icon .account-drop{
+  background: #fff;
+  width: 150px;
+  overflow: auto;
+  top: 100%;
+  right: 10px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  align-items: center;
+  text-align: center;
+}
+.nav-main-container .user-notif .notif .notif-drop{
+  background: #fff;
+  height:150px;
+  width: 150px;
+  top: 100%;
+  right: 50px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+.go-to-profile, .settings, .logout{
+  cursor: pointer;
+}
+.go-to-profile span, .settings span, .logout span{
+  padding: 5px;
+}
+.go-to-profile p, .settings p, .logout p{
+  padding: 5px;
+  margin: 0;
+}
+.go-to-profile:hover, .settings:hover, .logout:hover{
+  background: #F0F2F5;
+  border-radius: 5px;
+}
+.account-drop .go-to-profile .material-icons-outlined,
+.account-drop .settings .material-icons-outlined,
+.account-drop .logout .material-icons {
+  vertical-align: middle;
+}
+/*HOME FEED USER*/
+.feed{
+  background: #fff;
+  margin: auto;
+  width: 600px;
+  overflow: auto;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 8px 6px -6px #dddfe2;
+  border-radius: 5px;
+}
+.feed .home-feed-user{
+  overflow: auto;
+  position: relative;
+  float: left;
+}
+.feed .home-feed-user img {
+  height:40px;
+  width:40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, .25);
+  cursor: pointer;
+}
+.feed .search-box {
+  display: flex;
+  width: 90%;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+.feed .search-box p {
+  width: 100%;
+  align-items: center;
+  background: #F0F2F5;
+  height: 40px;
+  border-radius: 50px;
+
+}
+.feed .search-box input {
+  width: 90%;
+  border: none;
+  padding: 5px;
+  padding-left: 20px;
+  margin: 5px;
+  background: none;
+  font-size: 15px;
+}
+.feed .search-box input:focus {
+  border: none;
+  outline: none;
+}
+.feed .search-box span {
+  color: rgba(0, 0, 0, 0.7);
+}
+.feed .home-feed-upload-or-live {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.feed .home-feed-upload-or-live li {
+  flex: 1;
+  font-size: 23px;
+  cursor: pointer;
+  user-select: none;
+}
+.feed .home-feed-upload-or-live li:hover {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.feed .home-feed-upload-or-live .fa-video {
+  color: red;
+  padding: 10px;
+}
+.feed .home-feed-upload-or-live .fa-file-video {
+  color: lightgreen;
+  padding: 10px;
+}
+#search-result {
+  display: none;
+  width: 580px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#search-result:hover{
+
+}
+#other-user-pic {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#other-users {
+  margin: 5px;
+}
+#other-users:hover{
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.25);
+}
+#other-users a{
+  text-decoration: none;
+}
+#other-users span {
+  color: #fff;
+}
+#imgPreview {
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+#submitPic {
+  margin: auto;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: rgba(36, 125, 243, 1);
+  background: rgba(231, 243, 255, 1);
+}
+#submitPic:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+/*HOME FEED MAIN*/
+.main-feed{
+  background: #fff;
+  margin: auto;
+  width: 600px;
+  overflow: auto;
+  padding: 10px 0;
+  margin-top: 10px;
+  box-shadow: 0 8px 6px -6px #dddfe2;
+  border-radius: 5px;
+}
+.main-feed .uploader-pic img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.main-feed .uploader-pic p {
+  font-weight: bold;
+  margin: 5px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+  padding-left: 10px;
+}
+.main-feed .uploader-vid video {
+  max-width: 100%;
+  height: auto;
+}
+.main-feed .uploader-vid video:focus {
+  border: none;
+  outline: none;
+}
+.main-feed .uploader-buttons {
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  padding-left: 10px;
+}
+.main-feed .uploader-buttons .liked, .main-feed .uploader-buttons .comment, .main-feed .uploader-buttons .share {
+  position: relative;
+}
+.main-feed .uploader-buttons span {
+  padding: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+}
+.main-feed .uploader-buttons span:hover{
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+.main-feed .like_count {
+  margin: 10px;
+  margin-top: 0;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.main-feed .like_count p {
+  font-weight: bold;
+  margin: 5px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.main-feed .uploader-buttons .liked .tooltipLike,
+.main-feed .uploader-buttons .comment .tooltipComment,
+.main-feed .uploader-buttons .share .tooltipShare{
+  visibility: hidden;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  font-size: 10px;
+  /* Position the tooltip */
+  top: 100%;
+  left: 50%;
+  margin-left: -30px;
+  position: absolute;
+  z-index: 1;
+}
+.main-feed .uploader-buttons .liked:hover .tooltipLike,
+.main-feed .uploader-buttons .comment:hover .tooltipComment,
+.main-feed .uploader-buttons .share:hover .tooltipShare{
+  visibility: visible;
+}
+.main-feed .caption {
+  margin: 10px;
+  margin-top: 0;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.main-feed .caption p {
+  margin: 5px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.main-feed .caption a {
+  margin-right: 10px;
+}
+/*UPLOAD VIDEO POPUP*/
+.upload-popup {
+  width: 350px;
+  overflow: auto;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+.upload-popup span {
+  float: right;
+}
+.upload-popup span:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+#vidPreview {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 5px;
+}
+#submitVid {
+  margin: auto;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: rgba(36, 125, 243, 1);
+  background: rgba(231, 243, 255, 1);
+}
+#submitVid:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+.upload-popup .upload-vid textarea {
+  width: 90%;
+  overflow: auto;
+  border: none;
+}
+.upload-popup .upload-vid textarea:focus{
+  outline-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 799px) {
+  .nav-main-container .nav-container .menu {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 599px) {
+  .nav-main-container .nav-container .menu {
+    width: 50vw;
+  }
+  .feed {
+    width: 100%;
+    border-radius: none;
+  }
+  .main-feed {
+    width: 100%;
+    border-radius: none;
+  }
+}
+
+@media (max-width: 535px) {
+  .feed .search-box {
+    width: 88%;
+  }
+}
+
+@media (max-width: 519px) {
+  .feed{
+    padding: 5px;
+  }
+}
+
+@media (max-width: 444px) {
+  .feed .search-box {
+    width: 85%;
+  }
+}
+
+@media (max-width: 419px) {
+  .feed .search-box input {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  .feed .search-box span {
+    font-size: 12px;
+  }
+  .feed .home-feed-upload-or-live li {
+    font-size: 20px;
+  }
+  .feed .home-feed-user .cam-icon span {
+    font-size: 15px;
+    margin-left: 55px;
+  }
+}
+
+@media (max-width: 361px) {
+  .feed .search-box {
+    width: 82%;
+  }
+}

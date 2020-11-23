@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.overlay {
+ 	position:absolute;
+	display:none;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+	left: 0;
+  bottom: 0;
+  right: 0;
+}
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.container img {
+  width: 100%;
+}
+.drop {
+  height: 50px;
+}
+.container h2 {
+  margin: 0;
+  padding: 0;
+  color: #303030;
+  font-size: 30px;
+}
+.container .login_inputs {
+  position: relative;
+}
+.container .login_inputs input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #03a9f4;
+}
+.container input[type="submit"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: rgba(3, 169, 244, 0.7);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-left: 35%;
+  margin-bottom: 10px;
+}
+.container input[type="submit"]:hover {
+  background: rgba(3, 169, 244, 0.5);
+  transition: .3s;
+}
+.container p {
+  float: left;
+  font-size: 12px;
+  padding: 5px;
+  color: #8a8a8a;
+}
+.container p a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #1a0dab;
+}
+.register_popup {
+    position: absolute;
+    width: 600px;
+    display: none;
+    padding-bottom: 15px;
+    background-color: white;
+    text-align: center;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+.register_popup span {
+  float: right;
+  padding: 5px;
+  margin: 5px;
+  color: orangered;
+}
+.register_popup .material-icons {
+  padding: 5px;
+  cursor: pointer;
+}
+.register_popup .material-icons:hover {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: .3s;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table, td {
+  margin: 5px;
+  padding: 10px;
+}
+.registration_info input {
+  width: 80%;
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 3px;
+}
+.registration_info .btn_register {
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 15px;
+  background: rgba(3, 169, 244, 0.7);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.registration_info .btn_register:hover {
+  background: rgba(3, 169, 244, 0.5);
+  transition: .3s;
+}
+.r_gender {
+  display: inline-flex;
+}
+.r_gender label {
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 3px;
+  margin: 5px;
+  padding: 5px;
+  color: rgba(0, 0, 0, .5);
+  font-size: 12px;
+}
+.form-error {
+  color: red;
+}
+.form-success {
+  color: green;
+}
+.input-error {
+  box-shadow: 0 0 5px red;
+}
+
+@media (max-width: 630px) {
+  .register_popup{
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .registration_info input{
+    font-size: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .container
+  {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .register_popup
+  {
+    width: 100%;
+  }
+}
